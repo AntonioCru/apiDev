@@ -31,8 +31,10 @@ const MoviesGrid = () => {
 
     return (  
 <form onSubmit={handleSubmit}>
-    <input type="text" placeholder="Ingrese la pelicula" onChange={handleChange} ></input>
-    <button type="submit">Buscar</button>
+    <div className="formSerch">
+    <input className="inputText" type="text" placeholder="Ingrese la pelicula" onChange={handleChange} ></input>
+    <button type="submit" className="button">Buscar</button>
+    </div>
           <MovieCard movies={useFetch(infoUrl)} />
 </form>
     );

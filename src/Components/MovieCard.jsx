@@ -1,9 +1,11 @@
 const MovieCard = ({movies}) => {
     console.log(movies);
+
+    const titleAux=movies.Title;
     return ( 
         <div className="targetContent">
-            <img src={movies.Poster} alt="" />
-        <h2 className="movieTitle target">{movies.Title}</h2>
+            <img src={movies.Poster} alt="Img" />
+        <h2 className="movieTitle target">{titleAux}</h2>
         <h3 className="movieYear target">{movies.Year}</h3>
         <h4 className="movieLanguage target">{movies.Language}</h4>
         <h5 className="movieTime target">{movies.Runtime}</h5>

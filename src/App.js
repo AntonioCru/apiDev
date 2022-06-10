@@ -6,9 +6,9 @@ import MoviesGrid from './Components/MoviesGrid';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <header>
-        <h1>PELICULAS</h1>
+        <h1 className='title'>PELICULAS</h1>
       </header>
 
       <main>
