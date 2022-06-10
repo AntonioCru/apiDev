@@ -1,19 +1,34 @@
-const MovieCard = ({movies}) => {
-    console.log(movies);
+import Card from "../Card";
 
-    const titleAux=movies.Title;
-    return ( 
-        <div className="targetContent">
-            <img src={movies.Poster} alt="Img" />
-        <h2 className="movieTitle target">{titleAux}</h2>
-        <h3 className="movieYear target">{movies.Year}</h3>
-        <h4 className="movieLanguage target">{movies.Language}</h4>
-        <h5 className="movieTime target">{movies.Runtime}</h5>
-        <h6 className="movieGenre target">{movies.Genre}</h6>
-        <h6 className="movieActor target">{movies.Actors}</h6>
-        <p className="moviePlot target">{movies.Plot}</p>
-        </div>
-     );
-}
- 
+const MovieCard = ({ movies }) => {
+  // const [dataPel, setdataPel] = useState([]);
+  // let img,title,year;
+
+  const dataCatch = movies.Search;
+  console.log(dataCatch);
+
+  // if(movies.Search=="undefined" || movies.Search == null || movies.Search==""){
+
+  //     console.log("--no hay pelicula--")
+
+  // }else if(movies.Search!="undefined"){
+  //     dataCatch.forEach(element =>  {
+  //         title = element.Title;
+  //         console.log("//--"+title+"--//")
+
+  //        img = element.Poster;
+
+  //        year = element.Year
+  //     }
+  //     );
+  // }
+  return (
+    <ul>
+      {dataCatch.map((movie) => (
+        <Card >{movie}</Card>
+      ))}
+    </ul>
+  );
+};
+
 export default MovieCard;
