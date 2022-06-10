@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 const useFetch = (URL) => {
   const [datas, setData] = useState([]);
+  
 
   useEffect(() => {
     //se ejecuta al final de que se carga el componente

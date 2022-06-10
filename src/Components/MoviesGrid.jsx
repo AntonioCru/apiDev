@@ -20,9 +20,10 @@ const MoviesGrid = () => {
         const handleSubmit = (e) => {
             e.preventDefault();
             console.log(datePel);
-            setInfoUrl("https://www.omdbapi.com/?t="+datePel+"&apikey="+process.env.REACT_APP_PRIVATE_KEY)
+            // setInfoUrl("https://www.omdbapi.com/?s="+datePel+"&apikey="+process.env.REACT_APP_PRIVATE_KEY+"&page="+page)
 
-            // setInfoUrl("https://www.omdbapi.com/?s=titanic&apikey=1838a85c&page=1")
+            setInfoUrl("https://www.omdbapi.com/?t="+datePel+"&apikey="+process.env.REACT_APP_PRIVATE_KEY)
+            
             
         }
         
