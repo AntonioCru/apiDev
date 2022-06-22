@@ -1,0 +1,16 @@
+.buttonNavegate{
+    text-align: center;
+} 
+.Abutton{
+    margin-left: 40px;
+    background-color: #094;
+    border: none;
+    margin-left: 20px;
+    padding: 10px;   
+}
+.Abutton:hover{
+    background: linear-gradient(to bottom, #23d71d, #22c11d);
+}
+.Abutton:active{
+    background: linear-gradient(to top, #f1800f, #cb751f);
+}

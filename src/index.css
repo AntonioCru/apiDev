@@ -1,25 +1,26 @@
-body{
+body {
   background: linear-gradient(to bottom, #8f8b8b, rgb(50, 44, 44));
-  
+  width: 100%;
+  height: 100vh;
 }
-.targetContent{
+.targetContent {
   text-align: center;
 }
-.target{
+.target {
   font-size: 25px;
   margin: 10px;
 }
-.title{
+.title {
   text-align: center;
 }
-.formSerch{
+.formSerch {
   text-align: center;
   padding-bottom: 30px;
 }
-.inputText{
+.inputText {
   border: none;
 }
-.button{
+.button {
   border: none;
   margin-left: 20px;
 }

@@ -1,19 +1,18 @@
-
-import './App.css';
-import MoviesGrid from './Components/MoviesGrid';
-
+import "./App.css";
+import MoviesGrid from "./Components/MoviesGrid";
 
 
 function App() {
   return (
-    <div className='container'>
+    <div className="container">
       <header>
-        <h1 className='title'>PELICULAS</h1>
+        <h1 className="title">PELICULAS</h1>
       </header>
 
       <main>
-        <MoviesGrid/>
+        <MoviesGrid />
       </main>
+      
     </div>
   );
 }

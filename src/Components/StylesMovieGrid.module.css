@@ -1,0 +1,23 @@
+.inputText{
+    border: none;
+    background: transparent;
+    color: #fff;
+    border-bottom: 4px solid rgba(51, 233, 23, 0.316);
+}
+.inputText:focus{
+    background: linear-gradient(to bottom, transparent, rgba(51, 34, 34, 0.521));
+    outline: none;
+    border-bottom: 4px solid #5f9;
+}
+.button{
+    background-color: #094;
+    border: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.button:hover{
+    background: linear-gradient(to bottom, #23d71d, #22c11d);
+}
+.button:active{
+    background: linear-gradient(to top, #f1800f, #cb751f);
+}
