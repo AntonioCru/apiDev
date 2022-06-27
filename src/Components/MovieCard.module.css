@@ -5,6 +5,12 @@
   padding: 40px;
   justify-content: center;
 }
+.totalPel{
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  opacity: .4;
+}
 
 @media (max-width: 1140px) {
   .movieGrid {

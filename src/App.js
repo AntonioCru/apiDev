@@ -1,7 +1,6 @@
 import "./App.css";
 import MoviesGrid from "./Components/MoviesGrid";
 
-
 function App() {
   return (
     <div className="container">
@@ -12,7 +11,6 @@ function App() {
       <main>
         <MoviesGrid />
       </main>
-      
     </div>
   );
 }

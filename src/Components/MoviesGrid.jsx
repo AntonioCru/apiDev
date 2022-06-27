@@ -5,7 +5,7 @@ import NavegatePage from "./NavegatePage";
 import styles from "./StylesMovieGrid.module.css";
 
 const MoviesGrid = () => {
-  const page=null;
+  const page = null;
   // const [page, setPage] = useFetch(1);
   const [datePel, setdatePel] = useState();
   const [infoUrl, setInfoUrl] = useState();
@@ -24,15 +24,16 @@ const MoviesGrid = () => {
     );
   };
 
-  const functionDisplay = () =>{
-          
-  }
-
   return (
     <Fragment>
       <form onSubmit={handleSubmit}>
         <div className="formSerch">
           <input
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') {
+                setdatePel(e.target.value);
+              }
+            }}
             className={styles.inputText}
             type="text"
             placeholder="Ingrese la pelicula"
@@ -40,10 +41,11 @@ const MoviesGrid = () => {
               setdatePel(e.target.value || "");
             }}
           ></input>
-          <button type="submit" className={styles.button} onClick={functionDisplay}>
+          <button type="submit" className={styles.button}>
             Buscar
           </button>
         </div>
+
         <MovieCard movies={useFetch(infoUrl)} />
       </form>
       <NavegatePage
